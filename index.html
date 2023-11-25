@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/icon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="./img/icon/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="./img/icon/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="./img/icon/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="./img/icon/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="./img/icon/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="./img/icon/favicon-228.png" sizes="228x228">
+    <link rel="shortcut icon" href="./img/icon/favicon-196.png" sizes="196x196">
+    <link rel="apple-touch-icon" href="./img/icon/favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="./img/icon/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./img/icon/favicon-180.png" sizes="180x180">
+    <meta name="msapplication-TileColor" content="#4682b4">
+    <meta name="msapplication-TileImage" content="./img/icon/favicon-144.png">
+    <meta name="msapplication-config" content="./img/icon/browserconfig.xml" />
+
+    <title>Sliding Puzzle Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/lib.js" defer></script>
+    <script src="./js/hammer.min.js" defer></script>
+    <script src="./js/NPuzzleSolver.js" defer></script>
+    <script src="./js/Game.js" defer></script>
+    <script src="./js/Cell.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sliding Puzzle Game</h1>
+        <div class="controls">
+            <div class="controls__main">
+                <button id="instructions" title="Instructions">Instructions</button>
+                <button id="cleargamedata" title="ClearGameData">Clear Game Data</button>
+            </div>
+            <div class="controls__game none">
+                <button id="level" title="Levels list">Levels</button>
+                <button id="save" title="Save cells position">Save</button>
+                <button id="load" disabled title="Load saved cells position">Load</button>
+                <button id="solve" disabled title="Can not solve for now">Solve</button>
+            </div>
+        </div>
+        <div class="board">
+        </div>
+        <div class="game-stats hidden">
+            <div class="game-stats__moves">
+                Moves:
+                <span class="game-stats__moves--value">0</span>
+            </div>
+            <div class="game-stats__local">
+                <span class="game-stats__local--level">3x3</span> | Your best result: <span
+                    class="game-stats__local--value">-</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="instructions popup hidden">
+        <div class="close"></div>
+        <h2>Instructions</h2>
+        <p>Starting at the top left corner, move the tiles in ascending order in the grid. The tile in the lower
+            right corner should remain "empty". To move a tile you can click on it, use your arrow keys or swipe on mobile
+            screen. This is an example of a puzzle one step from solving:</p>
+        <div><img src="./img/onestepaway.jpg" class="instructionphoto" alt="15 Puzzle Game"></div>
+    </div> 
+    <div class="popupSolve"></div>
+</body>
+
+</html>
