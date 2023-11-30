@@ -1,5 +1,5 @@
 function clearLocalStorageAndReload() {
-    localStorage.clear();
+    clearLocalGameData();
     location.reload();
    }
 
