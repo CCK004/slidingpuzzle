@@ -388,4 +388,132 @@ input[type="button"]:active {
     .controls div {
         min-width: 480px;
     }
+
+
+    .dark-mode {
+        background-color: #111;
+        color: #fff;
+    }
+    
+    .dark-mode h1 {
+        color: #fff;
+    }
+    
+    .dark-mode.controls button {
+        background-color: #333;
+        border-color: #fff;
+        color: #fff;
+    }
+    
+    .dark-mode.controls button:hover {
+        box-shadow: 1px 3px 3px 0 #b9b9b9a8;
+    }
+    
+    .dark-mode.controls button:disabled {
+        background: #333;
+        color: #777;
+        border: 2px solid #777;
+    }
+    
+    .dark-mode.controls .saved:after {
+        color: #fff;
+    }
+    
+    .dark-mode.popup {
+        background: #333;
+        border-color: #fff;
+    }
+    
+    .dark-mode.close {
+        border: 1px solid #ff6767;
+        background: #333;
+    }
+    
+    .dark-mode.close:before,
+    .dark-mode.close:after {
+        background: #ff6767;
+    }
+    
+    .dark-mode.board {
+        background: #222;
+        color: #fff;
+        border-color: #fff;
+    }
+    
+    .dark-mode.cell {
+        background: #333;
+    }
+    
+    .dark-mode.level {
+        border-color: #fff;
+    }
+    
+    .dark-mode.level__score {
+        color: #fff;
+    }
+    
+    .dark-mode.game-over:after {
+        color: #fff;
+    }
+    
+    .dark-mode.win {
+        color: #fff;
+    }
+    
+    .dark-mode.win-controls div {
+        background: #333;
+        border-color: #fff;
+        color: #fff;
+    }
+    
+    .dark-mode.win-controls div:hover {
+        transform: translateY(-2px);
+        box-shadow: 1px 3px 3px 0 #b9b9b9a8;
+    }
+    
+    .dark-mode.win-controls__all:after {
+        color: #fff;
+    }
+    
+    .dark-mode.win-controls__retry:after {
+        color: #fff;
+    }
+    
+    .dark-mode.win-controls__next:after {
+        color: #fff;
+    }
+    
+    .dark-mode.game-stats {
+        color: #fff;
+    }
+    
+    .dark-mode.contacts-links svg:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .dark-mode.submit-result {
+        background: #333;
+        color: #fff;
+        border-color: #fff;
+    }
+    
+    .dark-mode.submit-result input {
+        background: #444;
+        color: #fff;
+    }
+    
+    .dark-mode input[type="button"] {
+        background: #ff6767;
+        color: #fff;
+    }
+    
+    .dark-mode input[type="button"]:hover {
+        box-shadow: 1px 3px 3px 0 #b9b9b9a8;
+    }
+    
+    .dark-mode.container .none {
+        display: none;
+    } 
+    
+
 }
