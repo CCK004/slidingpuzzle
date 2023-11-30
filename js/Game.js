@@ -283,32 +283,7 @@ class Game {
         document.querySelector('.game-stats__local--level').textContent = `${this.gameLevel}x${this.gameLevel}`;
         document.querySelector('.game-stats__local--value').textContent = resultsObject[this.gameLevel].bestScore || '-';
     }
-    sumbitGlobalScoreData(playerName) {
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-        var urlencoded = new URLSearchParams();
-        urlencoded.append("id", this.gameLevel - 1);
-        urlencoded.append("level", this.gameLevel);
-        urlencoded.append("score", this.moveCount);
-        urlencoded.append("name", playerName);
-
-        var requestOptions = {
-            method: 'PUT',
-            headers: myHeaders,
-            body: urlencoded,
-            redirect: 'follow'
-        };
-
-        fetch(`https://5f103a9700d4ab00161349f0.mockapi.io/scores/${this.gameLevel - 1}/`, requestOptions)
-            .then(response => response.json())
-            .then(response => {
-                document.querySelector('.game-stats__global--value').textContent = response.score;
-                document.querySelector('.game-stats__global--name').textContent = response.name;
-            })
-            .catch(error => console.log('error', error));
-
-    }
     renderConsoleBoard() {
         let boardArray = [];
         for (let key in this.board) {
