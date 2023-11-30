@@ -99,50 +99,9 @@ function startGame(props) {
     if (localStorage.getItem('gameProcess')) document.querySelector('#load').disabled = false;
 }
 
-/* function getGlobalScoreData(level) {
-    fetch('https://5f103a9700d4ab00161349f0.mockapi.io/scores')
-        .then(response => response.json())
-        .then(data => {
-            const globalLevelData = data
-                .find(el => {
-                    return el.id == level - 1;
-                });
-            document.querySelector('.game-stats__global--value').textContent = globalLevelData.score;
-            document.querySelector('.game-stats__global--value').classList.remove('loading');
-            document.querySelector('.game-stats__global--name').textContent = globalLevelData.name;
-            document.querySelector('.game-stats__global--name').classList.remove('loading');
-        })
-} */ 
 
-/* function drawLeaderboard() {
-    const table = createElement('table', {
-        className: 'leaderboard-table',
-        children: [
-            createElement('tr', {
-                children: [
-                    createElement('th', {}, 'Level'),
-                    createElement('th', {}, 'Score'),
-                    createElement('th', {}, 'Player')
-                ]
-            })
-        ]
-    })
-    document.querySelector('.leaderboard').append(table);
-    fetch('https://5f103a9700d4ab00161349f0.mockapi.io/scores')
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(el => {
-                let rowEl = createElement('tr', {
-                    children: [
-                        createElement('td', {}, `${el.level}x${el.level}`),
-                        createElement('td', {}, el.score),
-                        createElement('td', {}, el.name),
-                    ]
-                });
-                table.append(rowEl);
-            })
-        })
-} */
+
+
 
 function showHidePopup() {
     document.querySelector(`.${this.id}`).classList.toggle('hidden');
@@ -154,6 +113,12 @@ document.querySelector('#instructions').onclick = showHidePopup;
 document.querySelector('#cleargamedata').addEventListener('click', function () {
     clearLocalStorageAndReload()
 });
+
+document.querySelector('#switchtheme').addEventListener('click', function (evt) {
+    
+});
+
+
 
 document.body.addEventListener('click', function (event) {
     if (event.target.classList.contains('close')) {
