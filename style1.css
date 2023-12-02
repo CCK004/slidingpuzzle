@@ -2,6 +2,8 @@ body,
 input {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
+    color:rgb(39, 55, 77);
+    background: white;
 }
 
 h1 {
@@ -20,11 +22,14 @@ h1 {
     margin-bottom: 10px;
 }
 
-.controls button {
+.controls button { /*menu and game controls*/
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 5px 5px;
     cursor: pointer;
+    background: white;
+    border: 2px solid rgb(82, 109, 130);
+    color: rgb(39, 55, 77);
     font-size: 1em;
     border-radius: 3px;
     width: 50%;
@@ -48,8 +53,11 @@ h1 {
     transform: translateY(2px);
 }
 
-.controls button:disabled {
+.controls button:disabled { /*When nothing to load*/
     cursor: not-allowed;
+    background: rgb(221, 230, 237);
+    color: gray;
+    border: 2px solid gray;
     box-shadow: none;
     transform: translateY(0);
 }
@@ -68,7 +76,7 @@ h1 {
 
 /* Popups*/
 
-.popup {
+.popup { /*instruction*/
     width: 280px;
     position: fixed;
     top: 40px;
@@ -77,6 +85,7 @@ h1 {
     background: white;
     padding: 10px 30px 30px 30px;
     box-sizing: content-box;
+    border: 2px solid rgb(82, 109, 130);
     border-radius: 5px;
     box-shadow: 0 0 9999px 9999px rgba(70, 130, 180, 0.38);
     z-index: 10;
@@ -85,22 +94,25 @@ h1 {
     transition: visibility 0s, opacity 0.1s linear;
 }
 
-.close {
+.close { /*cross*/
     position: absolute;
+    border: 1px solid rgb(82, 109, 130);
     border-radius: 50%;
     width: 36px;
     height: 36px;
     top: -18px;
     right: -18px;
+    background: white;
     box-sizing: border-box;
     transition: all 0.1s linear;
 }
 
 .close:before,
-.close:after {
+.close:after { /*cross*/
     content: " ";
     width: 27px;
     height: 1px;
+    background: rgb(82, 109, 130);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -121,7 +133,7 @@ h1 {
 
 /* Game board and levels */
 
-.board {
+.board { /*whole board*/
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -130,18 +142,21 @@ h1 {
     min-width: 300px;
     min-height: 300px;
     margin: 10px auto;
+    border: 2px solid rgb(82, 109, 130);
+    background: rgb(221, 230, 237);
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 40px;
+    color: rgb(39, 55, 77);
 }
 
 .cell,
-.level {
+.level { /*level selector*/
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid;
+    border: 1px solid rgb(82, 109, 130);
     box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
     margin: 2px;
     border-radius: 5px;
@@ -177,7 +192,9 @@ h1 {
 }
 
 .level__disabled {
-    border: 2px solid;
+    background: rgb(238, 245, 255);
+    color: rgb(39, 55, 77);
+    border: 2px solid rgb(82, 109, 130);
     cursor: not-allowed;
 }
 
@@ -224,7 +241,7 @@ h1 {
 
 .win-controls div {
     cursor: pointer;
-    border: 1px solid;
+    border: 1px solid rgb(82, 109, 130);
     border-radius: 10px;
     background: white;
     flex: 0 0 30%;
@@ -275,51 +292,6 @@ h1 {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-
-/* Sumbit Record Pop-up */
-
-.submit-result {
-    display: block;
-    position: absolute;
-    width: 90%;
-    max-width: 500px;
-    min-width: 250px;
-    left: 50%;
-    top: 20vh;
-    transform: translateX(-50%);
-    z-index: 10;
-    padding: 20px;
-    border: 2px solid;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 20px;
-}
-
-.submit-result input {
-    padding: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 5px;
-    font-size: 18px;
-}
-
-input[type="button"] {
-    font-size: 18px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    width: 100%;
-    margin: 5px;
-}
-
-input[type="button"]:hover {
-    box-shadow: 1px 3px 3px 0 #b9b9b9a8;
-}
-
-input[type="button"]:active {
-    transform: translateY(2px);
-}
-
 
 /* Additional */
 
