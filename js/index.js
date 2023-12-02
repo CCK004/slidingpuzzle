@@ -114,16 +114,6 @@ document.querySelector('#cleargamedata').addEventListener('click', function () {
     clearLocalStorageAndReload()
 });
 
-
-function themeswitcher (){
-    document.body.classList.toggle('dark-mode');
-    
-}
-document.querySelector('#switchtheme').onclick = themeswitcher;
-
-
-
-
 document.body.addEventListener('click', function (event) {
     if (event.target.classList.contains('close')) {
         event.target.parentElement.classList.toggle('hidden');
