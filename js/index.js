@@ -99,16 +99,17 @@ function startGame(props) {
     if (localStorage.getItem('gameProcess')) document.querySelector('#load').disabled = false;
 }
 
+
 function switchTheme() {
-    var theme = document.getElementById("theme");
-  
+    var linkElement = document.getElementById("theme");
+    
     // Check the current theme and switch to the other one
-    if (theme.getAttribute("href") === "style1.css") {
-      theme.href = "style2.css";
+    if (linkElement.href.includes("style1.css")) {
+        linkElement.href = "style2.css";
     } else {
-      theme.href = "style1.css";
+        linkElement.href = "style1.css";
     }
-  }
+}
 
 
 
