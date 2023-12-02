@@ -1,1 +1,1 @@
-Link: cck004.github.io/slidingpuzzle
+cck004.github.io/slidingpuzzle
