@@ -21,13 +21,14 @@
     <meta name="msapplication-config" content="./img/icon/browserconfig.xml" />
 
     <title>Sliding Puzzle Game Demo</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./light.css">
     <script src="./js/lib.js" defer></script>
     <script src="./js/hammer.min.js" defer></script>
     <script src="./js/NPuzzleSolver.js" defer></script>
     <script src="./js/Game.js" defer></script>
     <script src="./js/Cell.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script src="./js/theme.js" defer></script>
 </head>
 
 <body>
@@ -36,8 +37,8 @@
         <div class="controls">
             <div class="controls__main">
                 <button id="instructions" title="Instructions">Instructions</button>
-                <button id="switchtheme" title="SwitchTheme">Switch Theme - Work in progress</button>
-                <button id="cleargamedata" title="ClearGameData">Clear Game Data</button>
+                <button onclick="toggleTheme()" id="switchtheme" title="Switch Color Theme" >Switch Theme - Work in progress</button>
+                <button id="cleargamedata" title="Clear All Game Data">Clear Game Data</button>
             </div>
             <div class="controls__game none">
                 <button id="level" title="Levels list">Levels</button>
