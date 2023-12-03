@@ -2,6 +2,8 @@ body,
 input {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
+    color: whitesmoke;
+    background: black;
 }
 
 h1 {
@@ -25,9 +27,9 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 5px 5px;
     cursor: pointer;
-    background: white;
-    border: 2px solid steelblue;
-    color: steelblue;
+    background: black;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
     font-size: 1em;
     border-radius: 3px;
     width: 50%;
@@ -53,7 +55,7 @@ h1 {
 
 .controls button:disabled {
     cursor: not-allowed;
-    background: rgb(231, 231, 231);
+    background: black;
     color: gray;
     border: 2px solid gray;
     box-shadow: none;
@@ -80,10 +82,10 @@ h1 {
     top: 40px;
     left: 50vw;
     transform: translateX(-50%);
-    background: white;
+    background: black;
     padding: 10px 30px 30px 30px;
     box-sizing: content-box;
-    border: 2px solid steelblue;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     box-shadow: 0 0 9999px 9999px rgba(70, 130, 180, 0.38);
     z-index: 10;
@@ -94,13 +96,13 @@ h1 {
 
 .close {
     position: absolute;
-    border: 1px solid tomato;
+    border: 1px solid whitesmoke;
     border-radius: 50%;
     width: 36px;
     height: 36px;
     top: -18px;
     right: -18px;
-    background: white;
+    background: black;
     box-sizing: border-box;
     transition: all 0.1s linear;
 }
@@ -110,7 +112,7 @@ h1 {
     content: " ";
     width: 27px;
     height: 1px;
-    background: tomato;
+    background: whitesmoke;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -140,12 +142,12 @@ h1 {
     min-width: 300px;
     min-height: 300px;
     margin: 10px auto;
-    border: 2px solid steelblue;
-    background: rgb(235, 239, 245);
+    border: 2px solid whitesmoke;
+    background: black;
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 40px;
-    color: steelblue;
+    color: whitesmoke;
 }
 
 .cell,
@@ -154,7 +156,7 @@ h1 {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid steelblue;
+    border: 1px solid whitesmoke;
     box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.2);
     margin: 2px;
     border-radius: 5px;
@@ -163,7 +165,7 @@ h1 {
 
 .cell {
     position: absolute;
-    background: white;
+    background: black;
 }
 
 .cell--can-move {
@@ -186,11 +188,11 @@ h1 {
 
 .level__enabled {
     border-width: 2px;
-    background: white;
+    background: black;
 }
 
 .level__disabled {
-    background: rgb(231, 231, 231);
+    background: black;
     color: gray;
     border: 2px solid gray;
     cursor: not-allowed;
@@ -239,9 +241,9 @@ h1 {
 
 .win-controls div {
     cursor: pointer;
-    border: 1px solid steelblue;
+    border: 1px solid whitesmoke;
     border-radius: 10px;
-    background: white;
+    background: black;
     flex: 0 0 30%;
 }
 
@@ -304,8 +306,8 @@ h1 {
     transform: translateX(-50%);
     z-index: 10;
     padding: 20px;
-    background: white;
-    border: 2px solid steelblue;
+    background: black;
+    border: 2px solid whitesmoke;
     box-sizing: border-box;
     text-align: center;
     font-size: 20px;
@@ -320,8 +322,8 @@ h1 {
 }
 
 input[type="button"] {
-    background: steelblue;
-    color: white;
+    background: whitesmoke;
+    color: black;
     font-size: 18px;
     border: none;
     border-radius: 2px;

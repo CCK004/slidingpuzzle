@@ -28,7 +28,7 @@ function getLocalGameData() {
         },
         '9': {
             isAccessible: false,
-        },
+        }
     }
 }
 
